@@ -1,7 +1,7 @@
 function(){
   var jQuery = require('jquery');
   /* ========================================================
-   * bootstrap-tab.js v2.1.1
+   * bootstrap-tab.js v2.2.0
    * http://twitter.github.com/bootstrap/javascript.html#tabs
    * ========================================================
    * Copyright 2012 Twitter, Inc.
@@ -51,7 +51,7 @@ function(){
   
         if ( $this.parent('li').hasClass('active') ) return
   
-        previous = $ul.find('.active a').last()[0]
+        previous = $ul.find('.active:last a')[0]
   
         e = $.Event('show', {
           relatedTarget: previous
@@ -127,11 +127,9 @@ function(){
    /* TAB DATA-API
     * ============ */
   
-    $(function () {
-      $('body').on('click.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
-        e.preventDefault()
-        $(this).tab('show')
-      })
+    $(document).on('click.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
     })
   
   }(jQuery);

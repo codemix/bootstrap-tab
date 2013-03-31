@@ -1,7 +1,7 @@
 function(){
   var jQuery = require('jquery');
   /* ========================================================
-   * bootstrap-tab.js v2.0.4
+   * bootstrap-tab.js v2.1.0
    * http://twitter.github.com/bootstrap/javascript.html#tabs
    * ========================================================
    * Copyright 2012 Twitter, Inc.
@@ -28,7 +28,7 @@ function(){
    /* TAB CLASS DEFINITION
     * ==================== */
   
-    var Tab = function ( element ) {
+    var Tab = function (element) {
       this.element = $(element)
     }
   

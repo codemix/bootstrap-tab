@@ -1,4 +1,4 @@
-function(){
+(function(){
   var jQuery = require('jquery');
   /* ========================================================
    * bootstrap-tab.js v2.3.1
@@ -144,4 +144,4 @@ function(){
     })
   
   }(jQuery);
-}()
+})()

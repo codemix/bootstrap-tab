@@ -1,4 +1,4 @@
-(function(){
+;(function(){
   /* ========================================================================
    * Bootstrap: tab.js v3.0.2
    * http://getbootstrap.com/javascript/#tabs
@@ -135,4 +135,4 @@
   
   }(jQuery);
   
-})()
+})();
